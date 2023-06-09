@@ -1,0 +1,17 @@
+@mixin width-page($spacing: 40px) {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: $spacing;
+}
+
+@mixin circle-size($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin desktop {
+  @media (min-width: 768px) {
+    @content;
+  }
+}

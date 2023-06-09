@@ -1,0 +1,14 @@
+@use 'utility';
+
+.nav{
+    @include utility.width-page(30px 30px 15px);
+}
+
+.logo{
+    max-width: 150px;
+
+    @include utility.desktop{
+        margin-top: 2rem;
+        max-width: 230px;
+    }
+}
